@@ -1,7 +1,4 @@
-// using CAG2D_05;
 
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace CAG2D_05
