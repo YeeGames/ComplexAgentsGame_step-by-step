@@ -18,7 +18,7 @@ namespace CAG.S06
         /// <param name="thatYeeType">对方YeeType类型</param>
         internal override string CalcInterType(string thisYeeType, string thatYeeType)
         {
-            return YeeType.YeeRuleAdjecentMatrix[Array.IndexOf(YeeType.FromYeeTypeArray, thisYeeType), Array.IndexOf(YeeType.ToYeeTypeArray, thatYeeType)]; //BUG
+            return YeeType.YeeRuleAdjecentMatrix[Array.IndexOf(YeeType.FromYeeTypeArray, thisYeeType), Array.IndexOf(YeeType.ToYeeTypeArray, thatYeeType)];
         }
 
         /// <summary>
