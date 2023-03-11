@@ -1,7 +1,7 @@
 namespace CAG_06
 {
     /// <summary>
-    /// Yee3元素类型枚举
+    /// Yee 3元素类型枚举
     /// </summary>
     public enum Yee3ETypeEnum
     {

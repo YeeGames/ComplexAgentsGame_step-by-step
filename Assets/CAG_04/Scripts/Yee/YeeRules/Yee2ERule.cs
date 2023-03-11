@@ -1,15 +1,14 @@
 using System;
 using Unity.Mathematics;
 using UnityEngine;
-using CAG_05.Settings;
+using CAG_04.Settings;
 
-
-namespace CAG_05
+namespace CAG_04
 {
     /// <summary>
-    /// Yee 3元素规则  //NOTE 新增
+    /// Yee 2元素规则 //TODO 写完CAG_04之后待删除
     /// </summary>
-    public class Yee3ERule
+    public class Yee2ERule
     {
         /// <summary>
         /// 规则设置项
@@ -60,12 +59,12 @@ namespace CAG_05
         /// 方向，从己方个体之位置到对方个体之位置
         /// </summary>
         protected Vector2 direction_from_a1_to_a2 = Vector2.zero;
-        
-        /// <summary>
-        /// Yee 3元素类型
-        /// </summary>
-        private Yee3EType YeeType = new Yee3EType();
 
+        /// <summary>
+        /// Yee 2元素规则
+        /// </summary>
+        private Yee2EType YeeType = new Yee2EType();
+        
         /// <summary>
         /// 设置规则
         /// </summary>
@@ -90,9 +89,9 @@ namespace CAG_05
 
         /// <summary>
         /// <para>计算规则力：</para>
-        /// <para>如果是交互状态己方为`Ke`，则说明对方为`BeKe`，则己方受到拉力，对方受到推力，形成效果力为己方追逐对方逃避；</para>
-        /// <para>如果是交互状态己方为`BeKe`，则说明对方为`Ke`，则己方受到推力，对方受到拉力，形成效果力为对方追逐己方逃避；</para>
-        /// <para>如果是交互状态己方为`Same`，则说明对方也为`Same`，则双方互相无作用力；</para>
+        /// <para>假设方向`direction`为正向</para>
+        /// <para>如果是交互状态己方为`Same`，则说明对方也为`Same`，则双方都受到拉力，形成效果力为互相吸引；</para>
+        /// <para>如果是交互状态己方为`Opposite`，则说明对方也为`Opposite`，则双方都受到推力，形成效果力为互相排斥；</para>
         /// </summary>
         /// <param name="yeeInterType">Yee交互类型</param>
         /// <param name="pos1">己方个体位置</param>
@@ -103,16 +102,16 @@ namespace CAG_05
             vector_from_a1_to_a2 = (Vector2) (pos2 - pos1);
             direction_from_a1_to_a2 = vector_from_a1_to_a2.normalized;
             distance_from_a1_to_a2 = direction_from_a1_to_a2.magnitude;
-            if (yeeInterType == Yee3EInterTypeEnum.Ke.ToString())
+            if (yeeInterType == Yee2EInterTypeEnum.Same.ToString())
             {
-                this.ThisRuleForce = fieldStrength * ((float) +direction * direction_from_a1_to_a2) /
+                this.ThisRuleForce = fieldStrength * ((float) -direction * direction_from_a1_to_a2) /
                                      math.pow(distance_from_a1_to_a2, expCoefficient);
                 ThatRuleForce = fieldStrength * ((float) -direction * direction_from_a1_to_a2) /
                                 math.pow(distance_from_a1_to_a2, expCoefficient);
             }
-            else if (yeeInterType == Yee3EInterTypeEnum.BeKe.ToString())
+            else if (yeeInterType == Yee2EInterTypeEnum.Opposite.ToString())
             {
-                this.ThisRuleForce = fieldStrength * ((float) -direction * direction_from_a1_to_a2) /
+                this.ThisRuleForce = fieldStrength * ((float) +direction * direction_from_a1_to_a2) /
                                      math.pow(distance_from_a1_to_a2, expCoefficient);
                 ThatRuleForce = fieldStrength * ((float) +direction * direction_from_a1_to_a2) /
                                 math.pow(distance_from_a1_to_a2, expCoefficient);
