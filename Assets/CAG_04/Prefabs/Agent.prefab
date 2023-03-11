@@ -41,7 +41,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1192666073601752963}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 076156be27a3c47de891a4884368e305, type: 2}
+  m_Material: {fileID: 6200000, guid: 3de0e41218615420f88c4114f6bf4c8e, type: 2}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -89,7 +89,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 3869045930350941929}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 076156be27a3c47de891a4884368e305, type: 2}
+  m_Material: {fileID: 6200000, guid: 3de0e41218615420f88c4114f6bf4c8e, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -169,13 +169,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: c3c50c77841f7418796b6578ce0a6699,
+  m_Sprite: {fileID: -2413806693520163455, guid: 8b34ad0ee64934fe5ac3d6ea63083941,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -191,7 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1722038911113815791}
   - component: {fileID: 8004930575998053242}
-  - component: {fileID: 7214600133463079869}
+  - component: {fileID: 3015216203987836280}
   m_Layer: 0
   m_Name: Agent
   m_TagString: Untagged
@@ -239,7 +239,7 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7214600133463079869
+--- !u!114 &3015216203987836280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,12 +248,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5038881728993415723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b0de742bba0244fbb1ca3164eb12abd, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ff42445f02d0451a9dbfab0cc7a3c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aset: {fileID: 11400000, guid: 158951c52faa34408842dc76a8ec850c, type: 2}
-  gset: {fileID: 11400000, guid: 2cf5c513838cb4e59a8281b1fb0cacc1, type: 2}
-  rset: {fileID: 11400000, guid: 513331da0f82742b8aed3485df722ce4, type: 2}
+  aset: {fileID: 0}
+  gset: {fileID: 0}
+  rset: {fileID: 0}
   id: 
   maxSpeed: 0
   maxAngularSpeed: 0
@@ -332,7 +332,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: 2e19f9d52f82546789857ef79a6bb4e1,
+  m_Sprite: {fileID: -2413806693520163455, guid: d60b4a4c2d33d47788c71cc33cbd5ea5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
