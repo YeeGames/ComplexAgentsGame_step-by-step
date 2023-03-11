@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace CAG_06
 {
+    /// <summary>
+    /// Yee 2元素类型 //NOTE 新增
+    /// </summary>
     public class Yee2EType : YeeType
     {
         /// <summary>

@@ -3,10 +3,13 @@ using CAG_06.Settings;
 
 namespace CAG_06
 {
+    /// <summary>
+    /// Yee 规则 //NOTE 新增
+    /// </summary>
     public class YeeRule : MonoBehaviour
     {
         /// <summary>
-        /// 规则设置项
+        /// 规则设置项  //NOTE 新增
         /// </summary>
         [HideInInspector] public RuleSettings rset;
 

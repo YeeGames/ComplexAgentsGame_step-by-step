@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace CAG_06
 {
+    /// <summary>
+    /// Yee 2元素规则
+    /// </summary>
     public class Yee2ERule : YeeRule
     {
         /// <summary>

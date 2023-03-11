@@ -32,18 +32,18 @@ namespace CAG_06
         public float radiusSize = 30f;
 
         /// <summary>
-        /// Yee族枚举
+        /// Yee族枚举 //NOTE 新增
         /// </summary>
         private YeeFamilyEnum yeeFamilyEnum;
 
         /// <summary>
-        /// Yee类型
+        /// Yee类型 //NOTE 新增
         /// </summary>
         private YeeType yeeType;
 
         private void Awake()
         {
-            /// 选择YeeType类型
+            /// 选择YeeType类型 //NOTE 新增
             yeeType = YeeFamilyChooser.ChooseYeeType(gset.yeeFamilyEnum);
 
             /// 生成个体众
@@ -75,46 +75,5 @@ namespace CAG_06
         }
 
 
-        // Start is called before the first frame update
-        void Start()
-        {
-            // /// TODO 用YeeInteractionMatrix版本时会用到
-            // int[] agentsID = new int[_numAgentInWorld];
-            //
-            // /// 查找所有具有`agent`标记的游戏对象，这里是`AgentRuleEffector`  NOTE 后续可能会改变对象名称
-            // yeeAgentObjects = GameObject.FindGameObjectsWithTag(yeeAgent.aset.tag);
-            //
-            // Debug.Log("yeeAgentObjects.Length = " + yeeAgentObjects.Length);
-            //
-            // /// 获取各个体之ID值
-            // for (var i = 0; i < _numAgentInWorld; i++)
-            // {
-            //     agentsID[i] = yeeAgentObjects[i].GetInstanceID();
-            // }
-            //
-            // /// 初始化YeeInteraction
-            // YeeInteractionMatrix.Initialize(_numAgentInWorld, _numDimentsionInWorld, agentsID);
-        }
-
-
-        // Update is called once per frame
-        void FixedUpdate()
-        {
-            // /// TODO 用YeeInteractionMatrix版本时会用到
-            // ///TODO 获取所有的粒子对象相关的属性值，用一个数组向量
-            // for (int i = 0; i < _numAgentInWorld; i++)
-            // {
-            //     YeeInteractionMatrix.AgentsPosition[i] = yeeAgentObjects[i].transform.position;
-            //     // agentsPosition[i].X = yeeAgentObjects[i].transform.position.x;
-            //     // agentsPosition[i].Y = yeeAgentObjects[i].transform.position.y;
-            //     // agentsPosition[i].Z = yeeAgentObjects[i].transform.position.z;
-            // }
-            //
-            // /// TODO 计算交互情况
-            // // float[,] DistanceMatrix = YeeInteractionMatrix.CalculateYeeInteraction(agentsPosition);
-            // YeeInteractionMatrix.CalculateYeeInteraction(YeeInteractionMatrix.AgentsPosition);
-            // // Console.Write(YeeInteractionMatrix.DistanceMatrix);
-            // Debug.Log("Distance Matrix: " + YeeInteractionMatrix.DistanceMatrix.ToString());
-        }
     }
 }

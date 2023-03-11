@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace CAG_06
 {
+    /// <summary>
+    /// Yee 类型 //NOTE 新增
+    /// </summary>
     public class YeeType
     {
         /// <summary>

@@ -35,10 +35,10 @@ namespace CAG_05.Settings
         /// </summary>
         public float physicsMaterialsBounciness = 1.0f;
 
-        /// <summary>
-        /// Yee类型
-        /// </summary>
-        public YeeFamilyEnum yeeFamilyEnum = YeeFamilyEnum.Yee3E;
+        // /// <summary>
+        // /// Yee类型
+        // /// </summary>
+        // public YeeFamilyEnum yeeFamilyEnum = YeeFamilyEnum.Yee3E;
 
         /// <summary>
         /// 是否启用运行时设置模式 //TODO 

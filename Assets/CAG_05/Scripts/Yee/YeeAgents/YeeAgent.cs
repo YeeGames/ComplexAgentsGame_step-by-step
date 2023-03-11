@@ -146,11 +146,8 @@ namespace CAG_05
         /// <param name="ruleSettings">规则设置项</param>
         internal void Initialize(AgentSettings agentSettings, RuleSettings ruleSettings)
         {
-            /// 工厂模式获取游戏设置项要求的RuleType
-            this.inter.yeeRule = YeeFamilyChooser.ChooseYeeRule(this.gameObject, gset.yeeFamilyEnum);
-            // this.inter.yeeRule = YeeFamilyChooser.ChooseYeeRule(this.agentRuleEffector gset.yeeFamilyEnum);
             /// 设置YeeRule
-            this.inter.yeeRule.SetRule(ruleSettings);
+            this.inter.yee3ERule.SetRule(ruleSettings);
             /// 设置Agent
             this.SetAgentSettings(agentSettings);
         }
@@ -191,7 +188,7 @@ namespace CAG_05
             this.ruleCircleCollider2D.sharedMaterial = this.physicsMaterial2D;
 
             /// 设置规则圆圈碰撞器之范围之半径
-            this.ruleCircleCollider2D.radius = this.inter.yeeRule.ruleCircleColliderRadius;
+            this.ruleCircleCollider2D.radius = this.inter.yee3ERule.ruleCircleColliderRadius;
             this.agentRuleEffectorAreaSpriteRenderer.transform.localScale = new Vector3(this.ruleCircleCollider2D.radius * 2, this.ruleCircleCollider2D.radius * 2, 1);
         }
 

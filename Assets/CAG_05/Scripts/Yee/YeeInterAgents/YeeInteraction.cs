@@ -14,7 +14,7 @@ namespace CAG_05
         [SerializeField] private List<YeeInterAgent> YeeInterAgents = new List<YeeInterAgent>();
         private YeeInterAgent _yeeInterAgent;
 
-        [SerializeField] public YeeRule yeeRule;
+        [SerializeField] public Yee3ERule yee3ERule;
 
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace CAG_05
         {
             this._yeeInterAgent.agentName = thatYeeAgent.name;
             /// 计算Yee交互规则
-            this._yeeInterAgent.yeeInterType = this.yeeRule.CalcInterType(thisYeeAgent.yeeType, thatYeeAgent.yeeType);
+            this._yeeInterAgent.yeeInterType = this.yee3ERule.CalcInterType(thisYeeAgent.yeeType, thatYeeAgent.yeeType);
             this._yeeInterAgent.yeeRuleForce = Vector2.zero;
             this.YeeInterAgents.Add(this._yeeInterAgent);
         }
@@ -64,7 +64,7 @@ namespace CAG_05
                 _yeeInterAgent.yeeInterType = this.YeeInterAgents[i].yeeInterType;
 
                 /// 计算Yee规则圆圈碰撞器范围内的邻居个体之Yee规则力
-                _yeeInterAgent.yeeRuleForce = this.yeeRule.CalcRuleForce(_yeeInterAgent.yeeInterType, thisPos, thatPos);
+                _yeeInterAgent.yeeRuleForce = this.yee3ERule.CalcRuleForce(_yeeInterAgent.yeeInterType, thisPos, thatPos);
 
                 YeeInterAgents[i] = _yeeInterAgent;
             }

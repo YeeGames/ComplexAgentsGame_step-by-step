@@ -5,10 +5,10 @@ namespace CAG_05.Settings
     [CreateAssetMenu]
     public class RuleSettings : ScriptableObject
     {
-        /// <summary>
-        /// Yee类型族
-        /// </summary>
-        public YeeType YeeType = new YeeType();
+        // /// <summary>
+        // /// Yee类型族
+        // /// </summary>
+        // public YeeType YeeType = new YeeType();
 
         /// <summary>
         /// 力场强度

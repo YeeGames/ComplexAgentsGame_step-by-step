@@ -6,7 +6,7 @@ namespace CAG_06.Settings
     public class RuleSettings : ScriptableObject
     {
         /// <summary>
-        /// Yee类型族
+        /// Yee类型族  //NOTE 新增
         /// </summary>
         public YeeType YeeType = new YeeType();
 

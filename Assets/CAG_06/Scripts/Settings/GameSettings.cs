@@ -36,7 +36,7 @@ namespace CAG_06.Settings
         public float physicsMaterialsBounciness = 1.0f;
 
         /// <summary>
-        /// Yee类型
+        /// Yee类型 //NOTE 新增
         /// </summary>
         public YeeFamilyEnum yeeFamilyEnum = YeeFamilyEnum.Yee3E;
 

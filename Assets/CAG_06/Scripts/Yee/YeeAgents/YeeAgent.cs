@@ -146,9 +146,8 @@ namespace CAG_06
         /// <param name="ruleSettings">规则设置项</param>
         internal void Initialize(AgentSettings agentSettings, RuleSettings ruleSettings)
         {
-            /// 工厂模式获取游戏设置项要求的RuleType
+            /// 工厂模式获取游戏设置项要求的RuleType  //NOTE 新增
             this.inter.yeeRule = YeeFamilyChooser.ChooseYeeRule(this.gameObject, gset.yeeFamilyEnum);
-            // this.inter.yeeRule = YeeFamilyChooser.ChooseYeeRule(this.agentRuleEffector gset.yeeFamilyEnum);
             /// 设置YeeRule
             this.inter.yeeRule.SetRule(ruleSettings);
             /// 设置Agent
