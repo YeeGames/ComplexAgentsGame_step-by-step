@@ -14,7 +14,7 @@ namespace CAG_05
         /// <summary>
         /// Yee个体
         /// </summary>
-        [HideInInspector] public YeeAgent yeeAgent;
+        [HideInInspector] public YeeAgent yeeAgent=Resources.Load<YeeAgent>("Assets/CAG_05/Scripts/Yee/YeeAgents/YeeAgent.cs");
 
         /// <summary>
         /// 世界维度数

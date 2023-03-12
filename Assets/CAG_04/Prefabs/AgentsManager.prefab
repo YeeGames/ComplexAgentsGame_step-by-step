@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673dff798c0e7498da325e5e81772f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gset: {fileID: 0}
-  yeeAgent: {fileID: 0}
+  gset: {fileID: 11400000, guid: 1f0bff3a63d20497ca281cc11f1f25ec, type: 2}
+  yeeAgent: {fileID: 3015216203987836280, guid: 33cf16b32d7c942ec9c4432c41a0cd07,
+    type: 3}
   radiusSize: 30

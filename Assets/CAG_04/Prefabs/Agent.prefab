@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 3015216203987836280}
   m_Layer: 0
   m_Name: Agent
-  m_TagString: Untagged
+  m_TagString: YeeAgent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,7 +234,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: 076156be27a3c47de891a4884368e305, type: 2}
+  m_Material: {fileID: 6200000, guid: 3de0e41218615420f88c4114f6bf4c8e, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
@@ -251,9 +251,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff42445f02d0451a9dbfab0cc7a3c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aset: {fileID: 0}
-  gset: {fileID: 0}
-  rset: {fileID: 0}
+  aset: {fileID: 11400000, guid: f25d3a405908045ed9d7831e77df94b5, type: 2}
+  gset: {fileID: 11400000, guid: 1f0bff3a63d20497ca281cc11f1f25ec, type: 2}
+  rset: {fileID: 11400000, guid: c0024d381e9d241dcab9c11848b3d96f, type: 2}
   id: 
   maxSpeed: 0
   maxAngularSpeed: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6490064624255459568}
   - component: {fileID: 6490064624255459569}
   - component: {fileID: 6490064624255459570}
-  - component: {fileID: 5287775602235209212}
+  - component: {fileID: 9178727011883011181}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -55,7 +55,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f6efb6ef75bb741e192a400b9449b855, type: 2}
+  - {fileID: 2100000, guid: f5817bf1c307643ad8a49a773f9ed06c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -501,7 +501,7 @@ EdgeCollider2D:
   m_GameObject: {fileID: 5917893364211313925}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: b104fe92e79814d26ae433adee35f10e, type: 2}
+  m_Material: {fileID: 6200000, guid: 39542586d853b4ee6ae9e5498e053d60, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -888,12 +888,12 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: b104fe92e79814d26ae433adee35f10e, type: 2}
+  m_Material: {fileID: 6200000, guid: 39542586d853b4ee6ae9e5498e053d60, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5287775602235209212
+--- !u!114 &9178727011883011181
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -902,10 +902,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5917893364211313925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5472ce9469f64721bb4836c4e53d560, type: 3}
+  m_Script: {fileID: 11500000, guid: ee956b4eb24a844c0889db2105d868b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSettings: {fileID: 11400000, guid: 2cf5c513838cb4e59a8281b1fb0cacc1, type: 2}
-  lineRenderer: {fileID: 6490064624255459568}
-  edgeCollider2D: {fileID: 6490064624255459569}
-  rigidbody2D: {fileID: 6490064624255459570}
+  gameSettings: {fileID: 11400000, guid: f14b485e6b462468f9e158efeae012f5, type: 2}
+  lineRenderer: {fileID: 0}
+  edgeCollider2D: {fileID: 0}
+  rigidbody2D: {fileID: 0}
+  physicsMaterial2D: {fileID: 0}
+  quaternion: {x: 0, y: 0, z: 0, w: 0}

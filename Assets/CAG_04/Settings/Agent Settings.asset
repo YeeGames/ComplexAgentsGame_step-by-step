@@ -9,26 +9,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 859f95e6190894862ba2dd111f35d4ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a5dc25e1f6174142b62223eceabf205, type: 3}
   m_Name: Agent Settings
   m_EditorClassIdentifier: 
-  agentBaseName: agent
-  id: 19
-  agentName: agentRock19
+  agentBaseName: thisAgent
+  id: 
+  agentName: 
   tag: YeeAgent
   isMovable: 1
-  color: {r: 0, g: 0, b: 1, a: 1}
-  YeeType: Paper
+  color: {r: 1, g: 1, b: 1, a: 1}
+  YeeType: 
   mass: 1
   size: 10
   linearDrag: 0
   angularDrag: 0
   collisionRadius: 0.5
-  velocity: {x: 0.14772975, y: 0.42937908}
+  velocity: {x: 0, y: 0}
   maxSpeed: 20
-  maxAngularSpeed: 10
-  magnitudeForce: 0
-  magnitudeForceRadius: 0
+  maxAngularSpeed: 20
+  magnitudeForce: -10
+  magnitudeForceRadius: 5
   physicsMaterialFriction: 0
   physicsMaterialBounciness: 1
   energy: 1

@@ -1,5 +1,6 @@
+using System.ComponentModel;
+using Unity.Collections;
 using UnityEngine;
-using CAG_04.Settings;
 using Random = UnityEngine.Random;
 
 namespace CAG_04
@@ -9,12 +10,12 @@ namespace CAG_04
         /// <summary>
         /// game settings
         /// </summary>
-        [HideInInspector] public GameSettings gset;
+        public GameSettings gset;
 
         /// <summary>
         /// Yee个体
         /// </summary>
-        [HideInInspector] public YeeAgent yeeAgent;
+        public YeeAgent yeeAgent;
 
         /// <summary>
         /// 世界维度数
@@ -73,6 +74,5 @@ namespace CAG_04
             /// 计算维度总数
             _numDimentsionInWorld = gset.dimension;
         }
-        
     }
 }

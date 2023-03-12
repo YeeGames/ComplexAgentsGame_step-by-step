@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa623e3e9a9f48e4810dfe6400728478, type: 3}
+  m_Script: {fileID: 11500000, guid: 7dffe460a64124865bfe4f53b799b882, type: 3}
   m_Name: Rule Settings
   m_EditorClassIdentifier: 
-  fieldStrength: 5
-  forceEffectiveRadius: 2
-  expCoefficient: 0
+  fieldStrength: 10
+  forceEffectiveRadius: 5
+  expCoefficient: 1
   direction: 1

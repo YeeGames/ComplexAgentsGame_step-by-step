@@ -1,6 +1,5 @@
 using Unity.Collections;
 using UnityEngine;
-using CAG_04.Settings;
 
 namespace CAG_04
 {
@@ -52,17 +51,17 @@ namespace CAG_04
         /// <summary>
         /// 个体设置项
         /// </summary>
-        [HideInInspector] public AgentSettings aset;
+        [HideInInspector] public AgentSettings aset = Resources.Load<AgentSettings>("Assets/CAG_04/Settings/Agent Settings.asset");
 
         /// <summary>
         /// Game设置项
         /// </summary>
-        [HideInInspector] public GameSettings gset;
+        [HideInInspector] public GameSettings gset = Resources.Load<GameSettings>("Assets/CAG_04/Settings/Game Settings.asset");
 
         /// <summary>
         /// Rule设置项
         /// </summary>
-        [HideInInspector] public RuleSettings rset;
+        [HideInInspector] public RuleSettings rset = Resources.Load<RuleSettings>("Assets/CAG_04/Settings/Rule Settings.asset");
 
         /// <summary>
         /// id
