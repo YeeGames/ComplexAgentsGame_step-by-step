@@ -1,7 +1,6 @@
 using System;
 using Unity.Mathematics;
 using UnityEngine;
-using CAG_05.Settings;
 
 
 namespace CAG_05

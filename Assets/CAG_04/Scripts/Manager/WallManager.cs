@@ -7,7 +7,7 @@ namespace CAG_04
         /// <summary>
         /// game settings
         /// </summary>
-        public GameSettings gameSettings;
+        public GameSettings gset;
 
         /// <summary>
         /// 线渲染组件
@@ -75,8 +75,8 @@ namespace CAG_04
         void BuildBoundingWall()
         {
             centerOfCircle = new Vector2(0, 0);
-            boundingWallWidth = gameSettings.stageRadiu * 2;
-            boundingWallRadius = gameSettings.stageRadiu + boundingWallWidth / 2;
+            boundingWallWidth = gset.stageRadiu * 2;
+            boundingWallRadius = gset.stageRadiu + boundingWallWidth / 2;
             positionCount = 360;
             angle = 360f / (positionCount - 1);
             lineRenderer = GetComponent<LineRenderer>();
@@ -87,8 +87,8 @@ namespace CAG_04
             physicsMaterial2D = new PhysicsMaterial2D(); // 自行新建2D物理材质
             if (physicsMaterial2D != null)
             {
-                physicsMaterial2D.friction = gameSettings.physicsMaterialsFriction;
-                physicsMaterial2D.bounciness = gameSettings.physicsMaterialsBounciness;
+                physicsMaterial2D.friction = gset.physicsMaterialsFriction;
+                physicsMaterial2D.bounciness = gset.physicsMaterialsBounciness;
             }
             else
             {

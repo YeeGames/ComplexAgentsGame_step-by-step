@@ -41,9 +41,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 325121577299000894}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a0a08e1743434e868576be9fab283ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 0064ba027a8064a85a577f651baa343a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gset: {fileID: 0}
-  yeeAgent: {fileID: 0}
-  radiusSize: 30
+  gset: {fileID: 11400000, guid: 2cf5c513838cb4e59a8281b1fb0cacc1, type: 2}
+  radiusSize: 20

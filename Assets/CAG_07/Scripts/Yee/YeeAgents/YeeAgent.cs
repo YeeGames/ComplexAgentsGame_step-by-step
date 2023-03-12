@@ -1,6 +1,5 @@
 using Unity.Collections;
 using UnityEngine;
-using CAG_07.Settings;
 using UnityEditor;
 
 namespace CAG_07

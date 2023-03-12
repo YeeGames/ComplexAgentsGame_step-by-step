@@ -14,7 +14,7 @@ namespace CAG_06
         [SerializeField] private List<YeeInterAgent> YeeInterAgents = new List<YeeInterAgent>();
         private YeeInterAgent _yeeInterAgent;
 
-        [SerializeField] public YeeRule yeeRule;  //NOTE 变动
+        [HideInInspector] public YeeRule yeeRule;  //NOTE 变动
 
 
         /// <summary>

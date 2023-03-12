@@ -1,5 +1,4 @@
 using UnityEngine;
-using CAG_07.Settings;
 using Random = UnityEngine.Random;
 
 namespace CAG_07
@@ -43,7 +42,7 @@ namespace CAG_07
 
         private void Awake()
         {
-            // yeeAgent = Resources.Load<CAG_07.YeeAgent>("Assets/CAG_07/Prefabs/Agent.prefab");
+            yeeAgent = Resources.Load<YeeAgent>("Prefabs/Agent");
             /// 选择YeeType类型 //NOTE 新增
             yeeType = YeeFamilyChooser.ChooseYeeType(gset.yeeFamilyEnum);
 

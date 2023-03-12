@@ -1,5 +1,4 @@
 using UnityEngine;
-using CAG_06.Settings;
 
 namespace CAG_06
 {
@@ -8,7 +7,7 @@ namespace CAG_06
         /// <summary>
         /// game settings
         /// </summary>
-        public GameSettings gameSettings;
+        public GameSettings gset;
 
         /// <summary>
         /// 线渲染组件
@@ -63,6 +62,9 @@ namespace CAG_06
 
         void Awake()
         {
+            /// 载入资源
+            gset = Resources.Load<GameSettings>("Settings/Game Settings");
+
             /// 生成外部围墙
             BuildBoundingWall();
         }
@@ -76,8 +78,8 @@ namespace CAG_06
         void BuildBoundingWall()
         {
             centerOfCircle = new Vector2(0, 0);
-            boundingWallWidth = gameSettings.stageRadiu * 2;
-            boundingWallRadius = gameSettings.stageRadiu + boundingWallWidth / 2;
+            boundingWallWidth = gset.stageRadiu * 2;
+            boundingWallRadius = gset.stageRadiu + boundingWallWidth / 2;
             positionCount = 360;
             angle = 360f / (positionCount - 1);
             lineRenderer = GetComponent<LineRenderer>();
@@ -88,8 +90,8 @@ namespace CAG_06
             physicsMaterial2D = new PhysicsMaterial2D(); // 自行新建2D物理材质
             if (physicsMaterial2D != null)
             {
-                physicsMaterial2D.friction = gameSettings.physicsMaterialsFriction;
-                physicsMaterial2D.bounciness = gameSettings.physicsMaterialsBounciness;
+                physicsMaterial2D.friction = gset.physicsMaterialsFriction;
+                physicsMaterial2D.bounciness = gset.physicsMaterialsBounciness;
             }
             else
             {

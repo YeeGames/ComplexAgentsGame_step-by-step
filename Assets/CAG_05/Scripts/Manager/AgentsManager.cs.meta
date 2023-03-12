@@ -4,9 +4,9 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - gameSettings: {fileID: 11400000, guid: eae67c67b0a2245b095c5ca4916009f5, type: 2}
-  - agentSettings: {fileID: 11400000, guid: a48add03ab80644659bd90e5a7c9b68c, type: 2}
-  - agentPrefab: {instanceID: 0}
+  - gset: {fileID: 11400000, guid: f14b485e6b462468f9e158efeae012f5, type: 2}
+  - yeeAgent: {fileID: 7214600133463079869, guid: f6debd45af96a4c5da472d3bc74292ad,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

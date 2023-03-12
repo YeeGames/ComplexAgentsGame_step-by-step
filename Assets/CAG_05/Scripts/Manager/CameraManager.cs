@@ -1,17 +1,19 @@
 using UnityEngine;
-using CAG_05.Settings;
 
 namespace CAG_05
 {
     public class CameraManager : MonoBehaviour
     {
-        public GameSettings gameSettings;
+        public GameSettings gset;
 
         // Start is called before the first frame update
         void Start()
         {
+            /// 载入资源
+            gset = Resources.Load<GameSettings>("Settings/Game Settings");
+
             /// 设置主摄像机视口大小
-            this.gameObject.GetComponent<Camera>().orthographicSize = gameSettings.stageRadiu + 2;
+            this.gameObject.GetComponent<Camera>().orthographicSize = gset.stageRadiu + 2;
         }
 
         // Update is called once per frame

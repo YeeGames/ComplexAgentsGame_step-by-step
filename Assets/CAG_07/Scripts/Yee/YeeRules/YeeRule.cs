@@ -1,5 +1,4 @@
 using UnityEngine;
-using CAG_07.Settings;
 
 namespace CAG_07
 {

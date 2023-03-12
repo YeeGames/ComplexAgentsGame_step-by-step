@@ -1,5 +1,5 @@
+using UnityEditor.SceneManagement;
 using UnityEngine;
-using CAG_05.Settings;
 using Random = UnityEngine.Random;
 
 namespace CAG_05
@@ -9,12 +9,12 @@ namespace CAG_05
         /// <summary>
         /// game settings
         /// </summary>
-        [HideInInspector] public GameSettings gset;
+        public GameSettings gset;
 
         /// <summary>
         /// Yee个体
         /// </summary>
-        [HideInInspector] public YeeAgent yeeAgent=Resources.Load<YeeAgent>("Assets/CAG_05/Scripts/Yee/YeeAgents/YeeAgent.cs");
+        public YeeAgent yeeAgent;
 
         /// <summary>
         /// 世界维度数
@@ -34,7 +34,7 @@ namespace CAG_05
         /// <summary>
         /// Yee族枚举
         /// </summary>
-        private Yee3EType yee3EType;
+        private Yee3EType yee3EType=new Yee3EType();
 
         // /// <summary>
         // /// Yee类型
@@ -43,8 +43,9 @@ namespace CAG_05
 
         private void Awake()
         {
-            /// 选择YeeType类型
-            // yee3EType = YeeFamilyChooser.ChooseYeeType(gset.yeeFamilyEnum);
+            /// 加载YeeAgent
+            yeeAgent=Resources.Load<YeeAgent>("Prefabs/Agent");
+            gset = Resources.Load<GameSettings>("Settings/Game Settings");
 
             /// 生成个体众
             for (var t = 0; t < yee3EType.NumElement; t++) // 遍历每一类YeeType，以生成个体

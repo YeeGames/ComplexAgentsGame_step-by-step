@@ -1,5 +1,5 @@
 using UnityEngine;
-using CAG_06.Settings;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace CAG_06
@@ -9,12 +9,12 @@ namespace CAG_06
         /// <summary>
         /// game settings
         /// </summary>
-        [HideInInspector] public GameSettings gset;
+        public GameSettings gset;
 
         /// <summary>
         /// Yee个体
         /// </summary>
-        [HideInInspector] public YeeAgent yeeAgent;
+        private YeeAgent yeeAgent;
 
         /// <summary>
         /// 世界维度数
@@ -43,6 +43,10 @@ namespace CAG_06
 
         private void Awake()
         {
+            /// 载入资源
+            yeeAgent = Resources.Load<YeeAgent>("Prefabs/Agent");
+            gset = Resources.Load<GameSettings>("Settings/Game Settings");
+
             /// 选择YeeType类型 //NOTE 新增
             yeeType = YeeFamilyChooser.ChooseYeeType(gset.yeeFamilyEnum);
 
@@ -73,7 +77,5 @@ namespace CAG_06
             /// 计算维度总数
             _numDimentsionInWorld = gset.dimension;
         }
-
-
     }
 }
