@@ -145,6 +145,8 @@ namespace CAG_05
         /// <param name="ruleSettings">规则设置项</param>
         internal void Initialize(AgentSettings agentSettings, RuleSettings ruleSettings)
         {
+            /// 添加Yee 3元素规则组件
+            this.inter.yee3ERule = this.gameObject.AddComponent<Yee3ERule>();
             /// 设置YeeRule
             this.inter.yee3ERule.SetRule(ruleSettings);
             /// 设置Agent
@@ -195,13 +197,10 @@ namespace CAG_05
         void Awake()
         {
             /// 载入资源
-            gset = Resources.Load<GameSettings>("Settings/Game Settings");
-            aset = Resources.Load<AgentSettings>("Settings/Agent Settings");
-            rset = Resources.Load<RuleSettings>("Settings/Rule Settings");
-
             this.aset = Resources.Load<AgentSettings>("Settings/Agent Settings");
             this.gset = Resources.Load<GameSettings>("Settings/Game Settings");
             this.rset = Resources.Load<RuleSettings>("Settings/Rule Settings");
+
             this.agentRigidbody2D = this.GetComponent<Rigidbody2D>();
             this.spriteRenderer = this.gameObject.transform.Find("AgentSpriteRenderer").GetComponent<SpriteRenderer>();
             this.rigidbodyCircleCollider2D = this.gameObject.transform.Find("AgentCollider").GetComponent<CircleCollider2D>();

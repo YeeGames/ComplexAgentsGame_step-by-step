@@ -8,12 +8,12 @@ namespace CAG_05
     /// <summary>
     /// Yee 3元素规则  //NOTE 新增
     /// </summary>
-    public class Yee3ERule
+    public class Yee3ERule : MonoBehaviour
     {
-        /// <summary>
-        /// 规则设置项
-        /// </summary>
-        [HideInInspector] public RuleSettings rset;
+        // /// <summary>
+        // /// 规则设置项
+        // /// </summary>
+        //  public RuleSettings rset;
 
         /// <summary>
         /// 规则圆圈碰撞器半径
@@ -59,7 +59,7 @@ namespace CAG_05
         /// 方向，从己方个体之位置到对方个体之位置
         /// </summary>
         protected Vector2 direction_from_a1_to_a2 = Vector2.zero;
-        
+
         /// <summary>
         /// Yee 3元素类型
         /// </summary>
@@ -76,7 +76,7 @@ namespace CAG_05
             this.expCoefficient = ruleSettings.expCoefficient;
             this.direction = ruleSettings.direction;
         }
-        
+
         /// <summary>
         /// 判断类型交互规则 
         /// </summary>

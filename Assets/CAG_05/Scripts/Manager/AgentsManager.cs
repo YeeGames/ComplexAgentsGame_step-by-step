@@ -52,7 +52,7 @@ namespace CAG_05
             {
                 for (var i = 0; i < gset.numAgent; i++) // 遍历单类YeeType之所有预定数量，以生成个体
                 {
-                    YeeAgent a = Instantiate(yeeAgent);
+                    var a = Instantiate(yeeAgent);
 
                     /// 随机生成在一个圆圈范围内
                     Vector2 pos = (Vector2) (this.transform.position) + Random.insideUnitCircle * radiusSize;

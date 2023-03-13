@@ -7,10 +7,10 @@ namespace CAG_06
     /// </summary>
     public class YeeRule : MonoBehaviour
     {
-        /// <summary>
-        /// 规则设置项  //NOTE 新增
-        /// </summary>
-        [HideInInspector] public RuleSettings rset;
+        // /// <summary>
+        // /// 规则设置项
+        // /// </summary>
+        // [HideInInspector] public RuleSettings rset;
 
         /// <summary>
         /// 规则圆圈碰撞器半径

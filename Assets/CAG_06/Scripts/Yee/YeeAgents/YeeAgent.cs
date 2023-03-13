@@ -1,6 +1,5 @@
 using Unity.Collections;
 using UnityEngine;
-using UnityEditor;
 
 namespace CAG_06
 {
@@ -198,9 +197,9 @@ namespace CAG_06
         void Awake()
         {
             /// 载入资源
-            gset = Resources.Load<GameSettings>("Settings/Game Settings");
-            aset = Resources.Load<AgentSettings>("Settings/Agent Settings");
-            rset = Resources.Load<RuleSettings>("Settings/Rule Settings");
+            this.gset = Resources.Load<GameSettings>("Settings/Game Settings");
+            this.aset = Resources.Load<AgentSettings>("Settings/Agent Settings");
+            this.rset = Resources.Load<RuleSettings>("Settings/Rule Settings");
 
             this.agentRigidbody2D = this.GetComponent<Rigidbody2D>();
             this.spriteRenderer = this.gameObject.transform.Find("AgentSpriteRenderer").GetComponent<SpriteRenderer>();
